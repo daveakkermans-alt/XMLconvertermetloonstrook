@@ -642,9 +642,7 @@ function handleXmlFile(file) {
       g('iNaam').textContent      = naam;
       g('iLhNr').textContent      = lhnr;
       g('iTijdvak').textContent   = tvStart && tvEind ? `${tvStart} – ${tvEind}` : tvStart || '—';
-      g('iTotLoon').textContent   = fmt(totLoon);
-      g('iIngLb').textContent     = fmt(ingLb);
-      g('iTeBet').textContent     = fmt(teBet);
+      // iTotLoon/iIngLb/iTeBet verwijderd uit UI — niet meer vullen
       g('statPeriod').textContent = tvStart ? tvStart.substring(0,7) : '—';
 
       // Werknemers zitten in <InkomstenverhoudingInitieel>
